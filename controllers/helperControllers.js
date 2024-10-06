@@ -799,7 +799,7 @@ module.exports = {
   },
   addBanerImage: async (req, res) => {
     try {
-      // console.log(req.file, "checkkk"); // Check the file object
+      console.log(req.file, "checkkk"); // Check the file object
       if (!req.file) {
         return res.status(400).json({
           status: 400,

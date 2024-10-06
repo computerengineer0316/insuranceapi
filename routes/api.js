@@ -1942,11 +1942,7 @@ router.get("/newsLetter", HelperController.getNewsLetterById);
 router.put("/newsLetter", HelperController.updateNewsLetter);
 
 //Baner Image ###################NewsLetter
-router.post(
-  "/banerImage",
-  upload.single("image"),
-  HelperController.addBanerImage
-);
+router.post("/bannerImage", upload.single("image"), HelperController.addBanerImage);
 router.get("/banerImages", HelperController.getBanerImage);
 router.get("/banerImage", HelperController.getBanerImageById);
 router.put(
